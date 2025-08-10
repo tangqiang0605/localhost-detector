@@ -7,8 +7,8 @@ const { buildExtension } = require('../lib/build');
 
 yargs(hideBin(process.argv))
   .command(
-    'start',
-    'Start the local port detector server and web UI',
+    'serve',
+    'Serve the local port detector web UI and API',
     (yargs) => {
       return yargs.option('port', {
         alias: 'p',

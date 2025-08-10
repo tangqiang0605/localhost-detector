@@ -1,18 +1,18 @@
 {
   "name": "localhost-detector",
+  "version": "0.0.7",
+  "description": "A command-line tool to detect open local ports, accompanied by a Chrome extension to quickly access them.",
+  "main": "lib/server.js",
   "bin": {
     "lcd": "bin/cli.js"
   },
   "scripts": {
-    "start": "node bin/cli.js start",
+    "serve": "node bin/cli.js serve",
     "build": "node bin/cli.js build",
     "commit": "/Users/qihangtang/Desktop/remote_debug/url-decocder/directions-learn/scripts/commit.cjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run build --prefix extension"
   },
-  "version": "0.0.6",
-  "description": "localhost 服务检测工具",
-  "main": "lib/server.js",
   "keywords": [
     "cli",
     "localhost",
