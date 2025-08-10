@@ -1,6 +1,6 @@
 {
   "name": "local-port-detector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A command-line tool to detect open local ports and serve them via an API.",
   "main": "lib/server.js",
   "bin": {

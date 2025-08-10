@@ -43,21 +43,21 @@
 
 .App {
   text-align: center;
-  min-width: 220px; /* Reduced width */
-  max-width: 280px;
-  padding: 0.5rem; /* Reduced padding */
+  min-width: 240px; /* Adjusted width */
+  max-width: 300px;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
 .App-header {
-  background-color: #282c34;
-  padding: 15px; /* Reduced padding */
-  color: white;
-  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
 }
 
 h4 {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
 }
 
 ul {
@@ -71,9 +71,9 @@ li {
 }
 
 a {
-  color: #61dafb;
+  color: #007bff;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 a:hover {
@@ -81,9 +81,33 @@ a:hover {
 }
 
 .error {
-  color: #ff6b6b;
+  color: #d9534f; /* Bootstrap danger color */
   font-size: 0.8rem;
-  padding: 5px;
+  padding: 10px;
   border-radius: 4px;
-  background-color: rgba(255, 107, 107, 0.1);
+  background-color: #f2dede; /* Lighter red background */
+  border: 1px solid #ebccd1;
 }
+
+.footer, .footer-error {
+  font-size: 0.8rem;
+  padding: 12px;
+}
+
+.footer p, .footer-error p {
+  margin: 0 0 8px 0;
+}
+
+.footer-error {
+  background-color: #fdf2f2;
+  border-top: 1px solid #fbebeb;
+}
+
+.footer-error code {
+  background-color: #eee;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+

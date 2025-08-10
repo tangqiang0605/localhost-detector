@@ -7,9 +7,9 @@
     "default_popup": "index.html"
   },
   "icons": {
-    "16": "vite.svg",
-    "48": "vite.svg",
-    "128": "vite.svg"
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
   },
   "host_permissions": [
     "http://localhost/"
