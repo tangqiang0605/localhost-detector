@@ -4,6 +4,7 @@ const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 const { startServer } = require('../lib/server');
 const { buildExtension } = require('../lib/build');
+const { exportExtension } = require('../lib/export');
 
 yargs(hideBin(process.argv))
   .command(
@@ -25,6 +26,16 @@ yargs(hideBin(process.argv))
     'build',
     'Build the Chrome extension',
     (yargs) => {
+      return yargs
+    },
+    () => {
+      buildExtension();
+    }
+  )
+  .command(
+    'export',
+    'Export the Chrome extension',
+    (yargs) => {
       return yargs.option('out', {
         alias: 'o',
         type: 'string',
@@ -33,7 +44,7 @@ yargs(hideBin(process.argv))
       });
     },
     (argv) => {
-      buildExtension(argv.out);
+      exportExtension(argv.out);
     }
   )
   .demandCommand(1, 'You need at least one command before moving on')

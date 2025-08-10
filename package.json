@@ -1,6 +1,6 @@
 {
   "name": "localhost-detector",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A command-line tool to detect open local ports, accompanied by a Chrome extension to quickly access them.",
   "main": "lib/server.js",
   "bin": {
