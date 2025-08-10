@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Localhost Port Detector",
+  "version": "0.1",
+  "description": "Detects and provides quick access to services running on localhost.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  },
+  "host_permissions": [
+    "http://localhost/"
+  ]
+}
