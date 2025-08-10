@@ -14,9 +14,20 @@ function App() {
         }
         const data = await response.json();
         setUrls(data);
+
+        // Set the badge with the number of open ports
+        if (chrome.runtime?.id) {
+          chrome.action.setBadgeText({ text: String(data.length) });
+          chrome.action.setBadgeBackgroundColor({ color: '#4688F1' });
+        }
+
       } catch (e) {
         setError('Failed to fetch open ports. Is the `lcd` server running?');
         console.error(e);
+        if (chrome.runtime?.id) {
+          chrome.action.setBadgeText({ text: '!' });
+          chrome.action.setBadgeBackgroundColor({ color: '#ff6b6b' });
+        }
       }
     };
 
@@ -26,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Open Local Ports</h2>
+        <h4>Open Local Ports</h4>
         {error && <p className="error">{error}</p>}
         {urls.length > 0 ? (
           <ul>
@@ -45,4 +56,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

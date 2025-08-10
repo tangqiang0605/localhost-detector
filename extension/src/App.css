@@ -40,3 +40,50 @@
 .read-the-docs {
   color: #888;
 }
+
+.App {
+  text-align: center;
+  min-width: 220px; /* Reduced width */
+  max-width: 280px;
+  padding: 0.5rem; /* Reduced padding */
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 15px; /* Reduced padding */
+  color: white;
+  border-radius: 8px;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: rgba(255, 107, 107, 0.1);
+}
