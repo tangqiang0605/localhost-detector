@@ -2,6 +2,11 @@
 
 欢迎您为本项目做出贡献！为了让协作更顺畅，请在开始前仔细阅读本指南。
 
+## TODO
+
+1. 插件应该将结果缓存？
+2. npmjs上显示github仓库
+
 ## 项目结构
 
 本项目包含两个主要部分：
@@ -116,6 +121,7 @@ npm login
 
 # 发布到 npm
 npm publish --registry https://registry.npmjs.org/
+npm unpublish localhost-detector@0.0.5 --registry https://registry.npmjs.org/
 ```
 
 ## 提交代码
