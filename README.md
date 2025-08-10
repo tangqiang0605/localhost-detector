@@ -1,7 +1,7 @@
 # Local Port Detector (lcd)
 
-[![NPM Version](https://img.shields.io/npm/v/local-port-detector.svg)](https://www.npmjs.com/package/local-port-detector)
-[![License](https://img.shields.io/npm/l/local-port-detector.svg)](https://github.com/your-username/local-port-detector/blob/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/localhost-detector.svg)](https://www.npmjs.com/package/localhost-detector)
+[![License](https://img.shields.io/npm/l/localhost-detector.svg)](https://github.com/your-username/localhost-detector/blob/main/LICENSE)
 
 A command-line tool to detect open local ports, accompanied by a Chrome extension to quickly access them.
 
@@ -44,13 +44,22 @@ Builds the extension and web UI.
 lcd build
 ```
 
+After building, you can use the `serve` command to start the web UI.
+
+### `export`
+
+After building, you can also get the extension files with the `export` command:
+
+```bash
+lcd export
+```
+
 By default, the extension is exported to a directory named `local-port-detector-extension` in your current working directory. You can specify a different output path using the `-o` or `--out` option:
 
 ```bash
-lcd build -o ./my-chrome-extensions
+lcd export -o ./my-chrome-extensions
 ```
 
-After building, you can use the `serve` command to start the web UI.
 ## API Endpoint
 
 The `lcd` server provides the following API endpoint:
