@@ -71,6 +71,28 @@ npm run dev
 
 现在，当您修改 `extension` 目录下的代码时，插件会自动刷新，方便您进行调试。
 
+## 仿真调试
+
+模仿用户的使用路径来测试代码。
+
+```bash
+npm link
+npm link <package-name>
+
+lcd start
+lcd export
+```
+
+export 命令会将插件导出到指定目录，默认为当前目录。
+
+也可以自行构建插件：
+
+```bash
+cd extension
+npm run build
+```
+
+
 ## 构建与发布
 
 ### 构建 Chrome 插件

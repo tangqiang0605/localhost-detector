@@ -11,6 +11,9 @@ prompt:
 context: "该项目是适用vite+react开发的检测和快速打开页面的chrome插件"
 ---
 
+## 【DONE】v0.0.5 人工修复
+1. 修复后台接口问题
+
 ## 【DONE】v0.0.4 lcd导出插件
 1. 编写精美的readme，包括badge。
 2. 启动lcd服务时，打印的日志还会提示有哪些接口以及如何使用这些接口（readme也会写）

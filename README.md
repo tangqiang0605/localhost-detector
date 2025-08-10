@@ -17,7 +17,7 @@ A command-line tool to detect open local ports, accompanied by a Chrome extensio
 Install the `lcd` tool globally using npm:
 
 ```bash
-npm install -g local-port-detector
+npm install -g @tencent/lcd
 ```
 
 ## Usage

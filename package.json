@@ -1,6 +1,6 @@
 {
-  "name": "@tencent/lcd",
-  "version": "0.0.4",
+  "name": "localhost-detector",
+  "version": "0.0.5",
   "description": "localhost 服务检测工具",
   "main": "lib/server.js",
   "bin": {

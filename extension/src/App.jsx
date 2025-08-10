@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 
 const DEFAULT_PORTS = [
-  '3000', '8080', '8000', '5173', '4200', '8081', '5000-5010'
+  '3000-4000', '5000-6000', '8000-9000',"12345"
 ];
 
 // Helper to check if running in a Chrome extension context
