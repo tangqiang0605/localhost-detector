@@ -3,6 +3,9 @@
   "name": "Localhost Port Detector",
   "version": "0.1",
   "description": "Detects and provides quick access to services running on localhost.",
+  "permissions": [
+    "storage"
+  ],
   "action": {
     "default_popup": "index.html"
   },
