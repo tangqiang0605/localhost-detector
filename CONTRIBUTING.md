@@ -25,8 +25,8 @@
 
 ```bash
 # 克隆项目
-git clone <repository-url>
-cd <project-directory>
+git clone git@github.com:tangqiang0605/localhost-detector.git
+cd localhost-detector
 
 # 安装 lcd 工具的依赖
 npm install
@@ -77,7 +77,7 @@ npm run dev
 
 ```bash
 npm link
-npm link <package-name>
+npm link localhost-detector
 
 lcd start
 lcd export
@@ -115,7 +115,7 @@ npm run build
 npm login
 
 # 发布到 npm
-npm publish
+npm publish --registry https://registry.npmjs.org/
 ```
 
 ## 提交代码

@@ -1,7 +1,7 @@
 # Local Port Detector (lcd)
 
-[![NPM Version](https://img.shields.io/npm/v/local-port-detector.svg)](https://www.npmjs.com/package/local-port-detector)
-[![License](https://img.shields.io/npm/l/local-port-detector.svg)](https://github.com/your-username/local-port-detector/blob/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/localhost-detector.svg)](https://www.npmjs.com/package/local-port-detector)
+[![License](https://img.shields.io/npm/l/localhost-detector.svg)](https://github.com/your-username/local-port-detector/blob/main/LICENSE)
 
 A command-line tool to detect open local ports, accompanied by a Chrome extension to quickly access them.
 
@@ -17,7 +17,7 @@ A command-line tool to detect open local ports, accompanied by a Chrome extensio
 Install the `lcd` tool globally using npm:
 
 ```bash
-npm install -g @tencent/lcd
+npm install -g localhost-detector
 ```
 
 ## Usage
