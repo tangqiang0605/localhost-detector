@@ -3,12 +3,12 @@
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 const { startServer } = require('../lib/server');
-const { exportExtension } = require('../lib/export');
+const { buildExtension } = require('../lib/build');
 
 yargs(hideBin(process.argv))
   .command(
     'start',
-    'Start the local port detector server',
+    'Start the local port detector server and web UI',
     (yargs) => {
       return yargs.option('port', {
         alias: 'p',
@@ -22,8 +22,8 @@ yargs(hideBin(process.argv))
     }
   )
   .command(
-    'export',
-    'Export the Chrome extension to a specified directory',
+    'build',
+    'Build the Chrome extension',
     (yargs) => {
       return yargs.option('out', {
         alias: 'o',
@@ -33,7 +33,7 @@ yargs(hideBin(process.argv))
       });
     },
     (argv) => {
-      exportExtension(argv.out);
+      buildExtension(argv.out);
     }
   )
   .demandCommand(1, 'You need at least one command before moving on')

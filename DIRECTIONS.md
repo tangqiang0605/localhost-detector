@@ -11,9 +11,10 @@ prompt:
 context: "该项目是适用vite+react开发的检测和快速打开页面的chrome插件"
 ---
 
-## 【DONE】v0.0.5 人工修复
-1. 修复后台接口问题
-
+## 【DONE】v0.0.5 增强服务功能
+1. 将 `export` 命令重命名为 `build`。
+2. 在 `package.json` 中添加 `prepublishOnly` 脚本，以便在发布前自动构建插件。
+3. 增强 `start` 命令，使其能够托管构建后的插件 (`extension/dist`)，并提供一个无需安装插件即可访问的 Web UI。
 ## 【DONE】v0.0.4 lcd导出插件
 1. 编写精美的readme，包括badge。
 2. 启动lcd服务时，打印的日志还会提示有哪些接口以及如何使用这些接口（readme也会写）
