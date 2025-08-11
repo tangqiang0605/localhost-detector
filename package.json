@@ -19,7 +19,11 @@
     "port",
     "detector"
   ],
-  "author": "",
+  "author": "tangqiangit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangqiangit/localhost-detector.git"
+  },
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

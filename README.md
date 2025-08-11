@@ -5,6 +5,8 @@
 
 A command-line tool to detect open local ports, accompanied by a Chrome extension to quickly access them.
 
+https://www.npmjs.com/package/localhost-detector
+
 ## Features
 
 - **Scan for Open Ports**: Scans a customizable list of local ports to find running services.
